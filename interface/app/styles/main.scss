@@ -1,0 +1,58 @@
+$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+
+@import 'sass-bootstrap/lib/bootstrap';
+
+$type-color: rgba(255,255,255,.8);
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+html,body {
+    margin: 0; padding: 0;
+}
+
+.fullscreen {
+    width: 100%;
+    height: 100%;
+
+    img {
+        width: 100%;
+        height: auto;
+        overflow:hidden;
+    }
+}
+
+.fixed {
+    position: fixed;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.bg {
+    z-index: -999;
+}
+
+section.clock {
+    height: 100%;
+    margin-top: 20%;
+    color: $type-color;
+    h1 {
+        font-size: 126pt;
+
+    }
+}
+
+section.weather {
+    width: 100%; height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    color: $type-color;
+
+    .station {
+        padding: 2%;
+        float: right;
+    }
+}

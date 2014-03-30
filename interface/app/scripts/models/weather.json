@@ -1,0 +1,39 @@
+{
+  "coord": {
+    "lon": -99.52,
+    "lat": 27.5
+  },
+  "sys": {
+    "message": 0.0572,
+    "country": "United States of America",
+    "sunrise": 1396182588,
+    "sunset": 1396227289
+  },
+  "weather": [
+    {
+      "id": 800,
+      "main": "Clear",
+      "description": "sky is clear",
+      "icon": "01n"
+    }
+  ],
+  "base": "cmc stations",
+  "main": {
+    "temp": 293.67,
+    "pressure": 1023,
+    "humidity": 52,
+    "temp_min": 293.15,
+    "temp_max": 294.15
+  },
+  "wind": {
+    "speed": 3.6,
+    "deg": 130
+  },
+  "clouds": {
+    "all": 1
+  },
+  "dt": 1396158960,
+  "id": 4705349,
+  "name": "Laredo",
+  "cod": 200
+}
