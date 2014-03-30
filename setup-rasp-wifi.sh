@@ -1,5 +1,6 @@
 #!/bin/bash
 # This sets up the wifi network on a local bash script on OSX
+# Referencing this: http://blog.self.li/post/63281257339/raspberry-pi-part-1-basic-setup-without-cables
 
 SSID=$(/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I | awk '/ SSID/ {print substr($0, index($0, $2))}');
 
@@ -11,9 +12,9 @@ echo "Your current wifi is $SSID";
 echo "What's the password for that wifi network?"
 read WIFI_PASS;
 
-# PATH="/dev/$IMAGE_DISK/etc/network/interfaces"
+PATH="/dev/$IMAGE_DISK/etc/network/interfaces"
 
-PATH='./file'
+# PATH='./file'
 
 echo "auto lo" > $PATH;
 echo "iface lo inet loopback" >> $PATH;
